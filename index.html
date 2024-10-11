@@ -25,7 +25,7 @@
         
         <div class="espaco">
             <label >
-                <input type="checkbox" id="modeToggle">
+                <input type="checkbox" id="modeToggle" onclick="myFunction()">
                 <div class="switch"></div>
             </label>
             <div id="projetos">Projetos Realizados:</div>
@@ -35,7 +35,16 @@
                 <div><img id="imagems" src="projeto2.png" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)"> <br> <a href="https://gabrielvfb1.github.io/display_flex1/">VEJA O SITE</a></div>
                 <div><img id="imagems" src="projeto3.png" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)"> <br> <a href="https://gabrielvfb1.github.io/site-de-delivery/?authuser=0">VEJA O SITE</a></div>
                 
+                
         </div> 
+        <button id="botao" class="eer">Abrir Modal</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                Segue o Link para meu perfil no GitHub <br>
+                <a href="https://github.com/GabrielVFB1" >https://github.com/GabrielVFB1</a>
+                </div>
+                </div>
         <br>
         <br>
         <br>
@@ -66,16 +75,16 @@
                     <div class="form">
                     <div class="items-form">   
                     <form>
-                    Nome: <input type="nome" placeholder="" required> <br>
-                    Email:<input type="email" placeholder="" required><br>
-                    Telefone: <input type="telefone" placeholder="" required><br>
+                    Nome: <input type="nome" placeholder="Digite seu nome..." required> <br>
+                    Email:<input type="email" placeholder="exemplo@gmail.com" required><br>
+                    Telefone: <input type="telefone" placeholder="(31) 9 9999-9999" required><br>
                     Mensagem: <textarea placeholder="Escreva sua mensagem aqui..." required></textarea><br>
                     <button type="submit">Enviar</button>
                 </form>
                 </div>
             
                 
-
+        </div>
         </div>
     </div>
     <script src="script.js"></script>
