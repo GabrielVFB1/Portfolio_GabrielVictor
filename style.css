@@ -231,9 +231,7 @@ input[type="checkbox"]:checked + .switch::before {
   transform: translateX(30px);
 }
 
-#fundoClaro {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0),rgb(67, 236, 236));
-}
+
 
 .modal {
   display: none;
