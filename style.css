@@ -38,11 +38,10 @@ a{color: #5855FF;}
   position: relative;
   width: 100%;
   height: 3000px;
+  background: linear-gradient(180deg, rgb(0, 0, 0),rgb(5, 51, 136));
 }
 
-.espaco:nth-child(2) {
-  background-color: black;
-}
+
 
 #sob {position: relative;
 top: 300px;
@@ -63,17 +62,13 @@ left: 200px;}
   top: 485px;
   left: 225px;}
 
-.espaco:nth-child(2) {
-  background: linear-gradient(180deg, rgb(0, 0, 0),rgb(5, 51, 136));
-}
-
 
 .imagemTeste {display: flex;}
 
   .imagemTeste div {
    margin: 50px;
     width: 33.1%;
-      height: 300px;
+      height: 175px;
       gap: 20px;
       padding: 15px;
       border-radius: 15%;
@@ -121,9 +116,6 @@ top: 235px;}
     font-size: 15px;
   }
 
-  
-
-  
 
 
   a {text-decoration: none;}
@@ -239,8 +231,64 @@ input[type="checkbox"]:checked + .switch::before {
   transform: translateX(30px);
 }
 
+#fundoClaro {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0),rgb(67, 236, 236));
+}
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
 
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 10px;
+  color: #000;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#botao{
+  color: white;
+      background-color:#82b0ec;
+      border-color: #ffffff;
+      border-radius: 30px;
+      padding: 15px 30px;
+      text-decoration: none;
+      cursor: pointer;
+      width: 160px;
+      height: 60px;
+      font-family: "Advent Pro", sans-serif;
+      font-size: 20px;
+      position: relative;
+      left: 1650px;
+      text-align: center;
+      top: 275px;
+
+}
 
 /*Site Versão Mobile*/
 
@@ -506,6 +554,62 @@ flex-direction: column;}
     
     input[type="checkbox"]:checked + .switch::before {
       transform: translateX(30px);
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 60%;
+      border-radius: 10px;
+      color: #000;
+      font-size: 25px;
+    }
+    
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      cursor: pointer;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    #botao{
+      color: white;
+          background-color:#82b0ec;
+          border-color: #ffffff;
+          border-radius: 30px;
+          padding: 15px 30px;
+          text-decoration: none;
+          cursor: pointer;
+          width: 160px;
+          height: 60px;
+          font-family: "Advent Pro", sans-serif;
+          font-size: 20px;
+          position: relative;
+          left: 250px;
+          text-align: center;
+          top: 275px;
+    
     }
   }
 
