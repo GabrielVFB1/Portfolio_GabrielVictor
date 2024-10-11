@@ -1,28 +1,20 @@
 const toggle = document.getElementById('modeToggle');
+const espaco = document.querySelector('.espaco');
 const paragraphs = document.querySelectorAll('p');
-const headings = document.querySelectorAll('h1');  
-
+const headings = document.querySelectorAll('h1');
 
 toggle.addEventListener('change', () => {
- 
-    document.body.style.backgroundColor = toggle.checked ? '#' : '';
-    document.body.style.color = toggle.checked ? '#55d978' : '';
-
-    
-    paragraphs.forEach(p => {
-        p.style.color = toggle.checked ? '#55d978' : '';
-        
+    document.body.style.backgroundColor = toggle.checked ? '#fff' : '';
+    document.body.style.color = toggle.checked ? '#000000' : '';
     });
 
-
-    headings.forEach(h1 => {
-        h1.style.color = toggle.checked ? '#55d978' : '';
-    });
-
-    
+toggle.addEventListener('change', () => {
+if (toggle.checked) {
+espaco.style.background = 'linear-gradient(180deg, rgb(255, 255, 255), rgb(67, 236, 236))'; // Fundo claro
+} else {
+espaco.style.background = 'linear-gradient(180deg, rgb(0, 0, 0), rgb(5, 51, 136))'; // Fundo escuro (original)
+}
 });
-
-
 
 var aText = new Array(
     "Sobre Mim:",
@@ -120,6 +112,29 @@ var aText = new Array(
       }
      
       function normalImg(x) {
-        x.style.height = "250px";
+        x.style.height = "200px";
         x.style.width = "px";
       }
+
+      var modal = document.getElementById("myModal");
+      var btn = document.querySelector(".eer");
+      var span = document.getElementsByClassName("close")[0];
+      
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+      
+      
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+      
+      
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      
+      
+     
